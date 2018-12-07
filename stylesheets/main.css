@@ -1,0 +1,62 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+
+  margin-bottom: 46px;
+}
+
+header img {
+  width: 170px;
+  height: 60px;
+
+  float: left;
+  margin-left: -40px;
+}
+
+main p {
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 6vw;
+  font-size: 5vw;
+
+  width: 55%;
+  float: right;
+  padding-right: 12px;
+  margin-bottom: 20px;
+
+  color: #FFFFFF;
+}
+
+.mozart img {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.notes {
+  text-align: center;
+}
+
+.notes img {
+  width: 80%;
+}
+
+.poster img {
+  margin-top: -1vh;
+  transition: 0.7s;
+}
+
+.poster img:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
