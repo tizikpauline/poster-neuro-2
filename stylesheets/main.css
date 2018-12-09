@@ -10,9 +10,9 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 70px;
 
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 }
 
 header img {
@@ -26,37 +26,323 @@ header img {
 main p {
   font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  line-height: 6vw;
-  font-size: 5vw;
+  line-height: 7vw;
+  font-size: 6vw;
 
-  width: 55%;
+  width: 70%;
   float: right;
-  padding-right: 12px;
+  margin-top: -80vw;
   margin-bottom: 20px;
 
   color: #FFFFFF;
 }
 
 .mozart img {
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   float: left;
+
+  position: absolute;
+
+  margin-top: -20vw;
+  margin-left: -10vw;
 }
 
 .notes {
-  text-align: center;
+  margin-top: 80vw;
 }
 
 .notes img {
-  width: 80%;
+  width: 100%;
+}
+
+.notes img:nth-of-type(1) {
+  position: absolute;
+  z-index: 1;
+
+  margin-left: -10vw;
+  margin-top: -64vw;
+  width: 96%;
+
+  float: left;
+}
+
+.notes img:nth-of-type(2) {
+  position: absolute;
+  z-index: 2;
+}
+
+.note-button {
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1px;
+  text-align: center;
+  color: white;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.notes button:nth-of-type(1) {
+  position: absolute;
+  z-index: 3;
+
+  margin-left: 6vw;
+  margin-top: 1vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+
+
+.notes button:nth-of-type(2) {
+  position: absolute;
+  z-index: 4;
+
+  margin-left: 15vw;
+  margin-top: 14.5vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.notes button:nth-of-type(3) {
+  position: absolute;
+  z-index: 5;
+
+  margin-left: 28vw;
+  margin-top: 19vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.notes button:nth-of-type(4) {
+  position: absolute;
+  z-index: 6;
+
+  margin-left: 41vw;
+  margin-top: 14.5vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.notes button:nth-of-type(5) {
+  position: absolute;
+  z-index: 7;
+
+  margin-left: 58vw;
+  margin-top: 10.1vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.notes button:nth-of-type(6) {
+  position: absolute;
+  z-index: 8;
+
+  margin-left: 71vw;
+  margin-top: 5.5vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.notes button:nth-of-type(7) {
+  position: absolute;
+  z-index: 9;
+
+  margin-left: 85vw;
+  margin-top: 5.5vw;
+
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: hidden;
+
+  background-color: white;
+  outline:none;
+}
+
+.note-button:hover {
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  line-height: 1vw;
+  text-align: center;
+  color: black;
+}
+
+.note-button:hover, .note-button:focus, .note-button:active {
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .poster img {
-  margin-top: -1vh;
+  margin-top: 50vw;
   transition: 0.7s;
 }
 
-.poster img:hover {
+.poster {
+  background-color: white;
+  transition: 0.7s;
+}
+
+.poster:hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+h2 {
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 7vw;
+  font-size: 6vw;
+
+  padding-bottom: 15px;
+  padding-left: 11px;
+}
+
+.poster-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 11px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 4vw;
+
+  padding-bottom: 5px;
+}
+
+.button button {
+  font-family: "FuturaBookC", Helvetica, Arial, sans-serif;
+  font-size: 4vw;
+  line-height: 5vw;
+
+  background-color: white;
+  border-color: black;
+  border-width: medium;
+
+  margin-right: 11px;
+}
+
+@media (min-width: 768px) {
+  .mozart img {
+    width: 60%;
+    height: 60%;
+    float: left;
+  }
+
+  .button button {
+    border-width: thick;
+  }
+
+  .dido {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin-bottom: 50px;
+  }
+
+  header img {
+    margin-top: -20px;
+
+    width: 300px;
+    height: 150px;
+  }
+
+  main p {
+    line-height: 6vw;
+    font-size: 5vw;
+    width: 58%;
+  }
+
+  .dido {
+    height: 60px;
+    width: 60px;
+  }
+
+  .poster {
+    text-align: center;
+  }
+
+  .poster img {
+    margin-top: 85vh;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .poster img {
+    margin-top: 90vh;
+    width: 60%;
+  }
+
+  .dido {
+    height: 70px;
+    width: 70px;
+  }
 }

@@ -14,3 +14,9 @@
 			 url("../fonts/Futura/FuturaLightC/FuturaLightC.ttf") format("truetype");
 
 }
+
+@font-face {
+  font-family: "FuturaBookC";
+	src: url("../fonts/Futura/FuturaBookC/FuturaBookC.ttf") format("truetype");
+
+}
