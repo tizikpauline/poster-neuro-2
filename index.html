@@ -2,8 +2,11 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheets/layout.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <script type="text/javascript" src="javascripts/jquery-3.3.1.js">
+    </script>
+    <script type="text/javascript" src="javascripts/menu.js"></script>
     <title>Нейроопера</title>
   </head>
   <body>
@@ -12,27 +15,39 @@
     </header>
     <main>
       <p>Кто сказал, что опера&nbsp;&mdash; это скучно?</p>
-      <div class="mozart">
-
-      </div>
       <div class="notes">
-        <img src="images/mozart_in_sunglasses.svg" alt="Моцарт">
-        <img src="images/lines_vector.svg" alt="">
-        <button class="note-button" type="button" name="button">Дидона и&nbsp;Эней</button>
-        <button class="note-button" type="button" name="button">Орфей и&nbsp;Эвридика</button>
-        <button class="note-button" type="button" name="button">Парис и&nbsp;Елена</button>
-        <button class="note-button" type="button" name="button">Идоменей</button>
-        <button class="note-button" type="button" name="button">Кастор и&nbsp;Поллукс</button>
-        <button class="note-button" type="button" name="button">Ариадна</button>
-        <button class="note-button" type="button" name="button">Заира</button>
+        <nav id="menu">
+          <img src="images/mozart_in_sunglasses.svg" alt="Моцарт">
+          <img src="images/lines_vector.svg" alt="">
+          <button data-hash="s1" class="note-button" type="button" name="button">Дидона и&nbsp;Эней</button>
+          <button data-hash="s2" class="note-button" type="button" name="button">Орфей и&nbsp;Эвридика</button>
+          <button data-hash="s3" class="note-button" type="button" name="button" onclick="location.href='#s3'">Парис и&nbsp;Елена</button>
+          <button data-hash="s4" class="note-button" type="button" name="button" onclick="location.href='#s4'">Идоменей</button>
+          <button data-hash="s5" class="note-button" type="button" name="button" onclick="location.href='#s5'">Кастор и&nbsp;Поллукс</button>
+          <button data-hash="s6" class="note-button" type="button" name="button" onclick="location.href='#s6'">Ариадна</button>
+          <button data-hash="s7" class="note-button" type="button" name="button" onclick="location.href='#s7'">Заира</button>
+        </nav>
       </div>
       <div class="poster">
         <img src="images/remember_me_for_web_vector.svg" alt="">
-        <h2>Дидона и Эней</h2>
+        <h2 id="s1">Дидона и Эней</h2>
         <div class="poster-info">
           <div class="dates">
             <h3>25.03-24.04</h3>
             <h3>19.00</h3>
+          </div>
+          <div class="button">
+            <button type="button" name="button">Купить билеты</button>
+          </div>
+        </div>
+      </div>
+      <div class="poster-2">
+        <img src="images/eurydice_vector.svg" alt="">
+        <h2 id="s2">Орфей и Эвридика</h2>
+        <div class="poster-info">
+          <div class="dates">
+            <h3>20.03-24.04</h3>
+            <h3>20.00</h3>
           </div>
           <div class="button">
             <button type="button" name="button">Купить билеты</button>
