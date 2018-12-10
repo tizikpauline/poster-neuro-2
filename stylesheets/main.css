@@ -281,17 +281,76 @@ h3 {
   margin-right: 11px;
 }
 
+footer {
+  background-color: white;
+}
+
+.info {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 18vw 18vw 5vw 18vw 18vw;
+  grid-template-rows: 20vw 20vw;
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vw;
+  justify-items: start;
+  align-items: start;
+
+  padding-top: 8vw;
+  margin-left: 1vw;
+}
+
+.info h3 {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4vw;
+  font-size: 3vw;
+
+  color: black;
+}
+
+.info a, p {
+  font-family: "FuturaBookC";
+  line-height: 3vw;
+  font-size: 2vw;
+  text-decoration: none;
+
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 8vw;
+}
+
+.copyright p {
+  font-family: "FuturaBookC";
+  line-height: 2vw;
+  font-size: 2vw;
+
+  color: black;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-right: 1vw;
+}
+
 @media (min-width: 768px) {
   header img {
     width: 270px;
     height: 90px;
-
-
   }
 
   .notes img:nth-of-type(1) {
     width: 70%;
-
     margin-top: -60vw;
   }
 
@@ -315,6 +374,7 @@ h3 {
   .poster img {
     margin-top: 85vh;
     width: 70%;
+    margin-left: 15vw
   }
 
   .poster-2 img {
@@ -395,6 +455,7 @@ h3 {
   .poster img {
     margin-top: 85vh;
     width: 60%;
+    margin-left: 0;
   }
 
   .poster-2 {
@@ -410,5 +471,27 @@ h3 {
   .poster img {
     margin-top: 95vh;
     width: 60%;
+    margin-left: 0;
   }
+
+  .info {
+    width: 60%;
+
+    grid-column-gap: 3vw;
+    grid-row-gap: 1vw;
+
+    margin-left: 10%;
+  }
+
+  .info h3 {
+    line-height: 2vw;
+    font-size: 1vw;
+  }
+
+  .info a, p {
+    line-height: 1vw;
+    font-size: 0.5vw;
+  }
+
+
 }
