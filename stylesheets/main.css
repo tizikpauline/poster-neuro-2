@@ -37,10 +37,6 @@ main p {
   color: #FFFFFF;
 }
 
-.about {
-  display: none;
-}
-
 .notes {
   margin-top: 80vw;
 }
@@ -386,15 +382,13 @@ footer {
   .poster img {
     margin-top: 85vh;
     width: 70%;
-    margin-left: 15vw
+    margin-left: 15vw;
   }
 
   .poster-2 img {
     width: 70%;
     margin-left: 15vw;
   }
-
-
 }
 
 @media (min-width: 1024px) {
@@ -462,8 +456,6 @@ footer {
     font-size: 3vw;
     line-height: 4vw;
 
-    background-color: white;
-    border-color: black;
     border-width: thick;
 
     margin-right: 4vw;

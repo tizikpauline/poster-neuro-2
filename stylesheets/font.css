@@ -3,7 +3,6 @@
 	src: url("../fonts/Futura/FuturaMediumC/FuturaMediumC.eot");
 	src: url("../fonts/Futura/FuturaMediumC/FuturaMediumC.woff") format("woff"),
 			 url("../fonts/Futura/FuturaMediumC/FuturaMediumC.ttf") format("truetype");
-
 }
 
 @font-face {
@@ -12,11 +11,9 @@
 	src: url("../fonts/Futura/FuturaLightC/FuturaLightC.eot?#iefix") format("embedded-opentype"),
 			 url("../fonts/Futura/FuturaLightC/FuturaLightC.woff") format("woff"),
 			 url("../fonts/Futura/FuturaLightC/FuturaLightC.ttf") format("truetype");
-
 }
 
 @font-face {
   font-family: "FuturaBookC";
 	src: url("../fonts/Futura/FuturaBookC/FuturaBookC.ttf") format("truetype");
-
 }
