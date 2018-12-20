@@ -3,322 +3,218 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 1vw;
+}
+
 body {
+  margin-left: 3vw;
+  margin-right: 3vw;
+
   background-color: black;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  height: 70px;
+  justify-content: space-between;
+  align-items: center;
 
-  margin-bottom: 15vw;
+  height: 13vw;
 }
 
-header img {
-  width: 36vw;
-  height: 15vw;
-
-  float: left;
-  margin-left: -20px;
+header img:first-of-type {
+  height: 10vw;
+  width: 30vw;
 }
 
-main p {
-  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+header img:last-child {
+  width: 10vw;
+}
+
+.cover {
+  margin-top: 11vw;
+  margin-bottom: 11vw;
+
+  text-transform: uppercase;
+}
+
+.cover h1 {
+  font-family: "FuturaMediumC";
   font-weight: 500;
-  line-height: 7vw;
-  font-size: 6vw;
-
-  width: 70%;
-  float: right;
-  margin-top: -78vw;
-  margin-bottom: 20px;
+  line-height: 1;
+  font-size: 5.5rem;
 
   color: #FFFFFF;
 }
 
-.notes {
-  margin-top: 80vw;
-}
-
-.notes img {
-  width: 100%;
-}
-
-.notes img:nth-of-type(1) {
-  position: absolute;
-  z-index: 1;
-
-  margin-left: -10vw;
-  margin-top: -60vw;
-  width: 90%;
-
-  float: left;
-}
-
-.notes img:nth-of-type(2) {
-  position: absolute;
-  z-index: 2;
-}
-
-.note-button {
-  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+.cover h2 {
+  padding-top: 1.5vw;
+  font-family: "FuturaMediumC";
   font-weight: 500;
-  font-size: 1px;
-  text-align: center;
-  color: white;
+  line-height: 1;
+  font-size: 9rem;
 
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  color: #B8F2F6;
 }
 
-.notes button:nth-of-type(1) {
-  position: absolute;
-  z-index: 3;
-
-  margin-left: 6vw;
-  margin-top: 1vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
+.cover img {
+  display: block;
+  margin: 11vw auto 0vw;
+  width: 55%;
 }
 
-.notes button:nth-of-type(2) {
-  position: absolute;
-  z-index: 4;
-
-  margin-left: 15vw;
-  margin-top: 14.5vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
+.about {
+  width: 85%;
+  margin-bottom: 11vw;
 }
 
-.notes button:nth-of-type(3) {
-  position: absolute;
-  z-index: 5;
+.about p{
+  font-family: "FuturaBookC";
+  line-height: 1;
+  font-size: 5rem;
+  text-align: left;
 
-  margin-left: 28vw;
-  margin-top: 19vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
+  color: #FFFFFF;
 }
 
-.notes button:nth-of-type(4) {
-  position: absolute;
-  z-index: 6;
-
-  margin-left: 41vw;
-  margin-top: 14.5vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
+.schedule {
+  display: block;
 }
 
-.notes button:nth-of-type(5) {
-  position: absolute;
-  z-index: 7;
+.afisha h2 {
+  margin-bottom: 10vw;
 
-  margin-left: 58vw;
-  margin-top: 10.1vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
-}
-
-.notes button:nth-of-type(6) {
-  position: absolute;
-  z-index: 8;
-
-  margin-left: 71vw;
-  margin-top: 5.5vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
-}
-
-.notes button:nth-of-type(7) {
-  position: absolute;
-  z-index: 9;
-
-  margin-left: 85vw;
-  margin-top: 5.5vw;
-
-  width: 8vw;
-  height: 8vw;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: hidden;
-
-  background-color: white;
-  outline:none;
-}
-
-.note-button:hover {
-  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+  font-family: "FuturaMediumC";
   font-weight: 500;
-  font-size: 1vw;
-  line-height: 1vw;
-  text-align: center;
-  color: black;
+  line-height: 1;
+  font-size: 10rem;
+  text-transform: uppercase;
+
+  color: #B8F2F6;
 }
 
-.note-button:hover, .note-button:focus, .note-button:active {
-  -webkit-transform: scale(1.8);
-  transform: scale(1.8);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-.poster img {
-  width: 100%;
-  margin-top: 50vw;
-  transition: 0.7s;
-}
-
-.poster-2 img {
-  width: 100%;
-  transition: 0.7s;
-}
-
-.poster, .poster-2 {
-  background-color: white;
-  transition: 0.7s;
-
-  padding-bottom: 3vw;
-  margin-bottom: 0.26vw;
-}
-
-.poster:hover, .poster-2:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-h2 {
-  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 7vw;
-  font-size: 6vw;
-
-  padding-bottom: 15px;
-  padding-left: 11px;
-}
-
-.poster-info {
+.perfomance {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 
-  margin-left: 11px;
+  margin-bottom: 9vw;
 }
 
 .dates {
+  margin-bottom: 2.5vw;
+}
+
+.dates-premiere {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 2.5vw;
 }
 
-.dates h3 {
-  font-family: "FuturaMediumC", Helvetica, Arial, sans-serif;
+.dates-premiere p {
+  font-family: "FuturaMediumC";
   font-weight: 500;
-  font-size: 5vw;
-  line-height: 4vw;
+  line-height: 1;
+  font-size: 4rem;
+  text-transform: uppercase;
+  float: right;
+  margin-bottom: 0.6vw;
 
-  padding-bottom: 5px;
+  color: #B8F2F6;
 }
 
-.button button {
-  font-family: "FuturaBookC", Helvetica, Arial, sans-serif;
-  font-size: 4vw;
-  line-height: 5vw;
+.perfomance h3 {
 
-  background-color: white;
-  border-color: black;
-  border-width: medium;
+  font-family: "FuturaMediumC";
+  font-weight: 500;
+  line-height: 1;
+  font-size: 8rem;
 
-  margin-right: 11px;
+  color: #FFFFFF;
 }
 
-footer {
-  background-color: white;
-  padding-left: 11px;
-  padding-right: 11px;
+.perfomance h4 {
+  margin-bottom: 2vw;
+
+  font-family: "FuturaMediumC";
+  font-weight: 500;
+  line-height: 1;
+  font-size: 7rem;
+
+  color: #FFFFFF;
+}
+
+.time {
+  margin-bottom: 2vw;
+}
+
+.time p {
+  font-family: "FuturaBookC";
+  line-height: 1;
+  font-size: 4rem;
+
+  color: #FFFFFF;
+}
+
+.buy-button {
+  width: 100%;
+  height: 9vw;
+
+  font-family: "FuturaBookC";
+  line-height: 1;
+  font-size: 5rem;
+  text-align: center;
+
+  background: #B8F2F6;
+  border-radius: 7px;
+  border-style: none;
 }
 
 .info {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 18vw 18vw 5vw 18vw 18vw;
-  grid-template-rows: 20vw 20vw;
-  grid-column-gap: 5vw;
-  grid-row-gap: 5vw;
-  justify-items: start;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-  padding-top: 8vw;
-  padding-bottom: 5vw;
-  justify-content: center;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
+
 .info h3 {
+  margin-bottom: 1.5vw;
   font-family: "FuturaMediumC";
   font-style: normal;
   font-weight: 500;
-  line-height: 4vw;
-  font-size: 3vw;
+  font-size: 5rem;
+  line-height: 1;
 
-  color: black;
+  color: white;
 }
 
 .info a, p {
   font-family: "FuturaBookC";
-  line-height: 3vw;
-  font-size: 2vw;
+  font-size: 4rem;
+  line-height: 1.4;
   text-decoration: none;
 
-  color: black;
+  color: white;
+}
+
+.adress {
+  margin-bottom: 7vw;
+}
+
+.admin {
+  margin-bottom: 7vw;
+}
+
+.ticket-window {
+  margin-bottom: 7vw;
 }
 
 .footer {
@@ -328,67 +224,155 @@ footer {
   align-items: flex-start;
 
   height: 8vw;
+  margin-top: 10vw;
 }
 
 .copyright p {
   font-family: "FuturaBookC";
-  line-height: 2vw;
-  font-size: 2vw;
+  line-height: 1;
+  font-size: 3.5rem;
 
-  color: black;
+  color: white;
 }
 
-.social {
+.social-sites {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  margin-right: 1vw;
 }
 
-.social img {
-  width: 100%;
-  padding-left: 2vw;
+.social-sites img {
+  height: 7vw;
+  padding-left: 2.5vw;
+  margin-bottom: 5vw;
+}
+
+hr {
+  color: white;
+  background-color: white;
+  border: none;
+  height: 0.2vw;
 }
 
 @media (min-width: 768px) {
-  header img {
-    width: 270px;
-    height: 90px;
+  header {
+    height: 9vw;
+  }
+  header img:first-of-type {
+    width: 17vw;
   }
 
-  .notes img:nth-of-type(1) {
+  header img:last-child {
+    width: 6vw;
+  }
+
+  .cover h1 {
+    font-size: 4rem;
+  }
+
+  .cover h2 {
+    font-size: 7rem;
+  }
+
+  .cover img {
+    width: 50%;
+  }
+
+  .about {
     width: 70%;
-    margin-top: -60vw;
   }
 
-  main p {
-    line-height: 5vw;
-    font-size: 4vw;
-    width: 42%;
-
-    margin-top: -76vw;
+  .about p {
+    font-size: 3.2rem;
   }
 
-  .button button {
-    border-width: thick;
+  .afisha h2 {
+    font-size: 7rem;
   }
 
-  .note-button:hover {
-    font-size: 1.2vw;
-    line-height: 1.2vw;
+  .perfomance {
+    margin-bottom: 0vw;
   }
 
-  .poster img {
-    margin-top: 85vh;
-    width: 70%;
-    margin-left: 15vw;
+  .perfomance h3 {
+    font-size: 6rem;
   }
 
-  .poster-2 img {
-    width: 70%;
-    margin-left: 15vw;
+  .perfomance h4 {
+    font-size: 4rem;
   }
+
+  .dates-premiere p {
+    font-size: 3rem;
+  }
+
+  .time {
+    margin-bottom: 2vw;
+  }
+
+  .time p {
+    font-family: "FuturaBookC";
+    line-height: 1;
+    font-size: 3rem;
+
+    color: #FFFFFF;
+  }
+
+  .buy-button {
+    width: 100%;
+    height: 7vw;
+
+    font-size: 3rem;
+  }
+
+  .schedule {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 35vw 35vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw;
+    grid-column-gap: 20vw;
+    grid-row-gap: 12vw;
+
+    margin-bottom: 7vw;
+  }
+
+  .info {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40vw 24vw;
+    grid-template-rows: 12vw 12vw;
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vw;
+    justify-items: start;
+    align-items: start;
+    text-align: left;
+
+    justify-content: space-between;
+  }
+
+
+  .info h3 {
+    margin-bottom: 1vw;
+
+    font-size: 3.5rem;
+    line-height: 1;
+
+    color: white;
+  }
+
+  .info a, p {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+
+  .copyright p {
+    font-family: "FuturaBookC";
+    line-height: 1;
+    font-size: 2rem;
+}
+
+.social-sites img {
+  height: 5vw;
 }
 
 @media (min-width: 1024px) {
@@ -403,76 +387,13 @@ footer {
     height: 110px;
   }
 
-  main p {
-    line-height: 5vw;
-    font-size: 4vw;
-    width: 45%;
-
-    margin-top: -56vw;
-  }
-
-  .notes {
-    margin-top: 60vw;
-  }
-
-  .notes img:nth-of-type(1) {
-    width: 60%;
-    margin-top: -46vw;
-    margin-left: -5vw;
-  }
-
-  .poster-info {
-    margin-left: 4vw
-  }
-
-  .note-button:hover {
-    font-size: 1.3vw;
-    line-height: 1.3vw;
-  }
-
-  .poster {
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 4vw;
-    line-height: 4vw;
-    text-align: left;
-    padding-left: 4vw;
-
-    padding-bottom: 5vw;
-  }
-
-  .dates h3 {
-    font-size: 3vw;
-    line-height: 2vw;
-    text-align: left;
-
-    padding-bottom: 10px;
-  }
-
-  .button button {
-    font-family: "FuturaBookC", Helvetica, Arial, sans-serif;
-    font-size: 3vw;
-    line-height: 4vw;
-
-    border-width: thick;
-
-    margin-right: 4vw;
-  }
-
-  .poster img {
-    margin-top: 85vh;
-    width: 60%;
-    margin-left: 0;
-  }
-
-  .poster-2 {
-    text-align: center;
-  }
-
-  .poster-2 img {
-    width: 60%;
+  .schedule {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 60vw 60vw 60vw;
+    grid-column-gap: 5vw;
+    grid-row-gap: 3vw;
   }
 
   .info  {
@@ -497,26 +418,6 @@ footer {
 }
 
 @media (min-width: 1440px) {
-  .poster img {
-    margin-top: 95vh;
-    width: 60%;
-    margin-left: 0;
-  }
-
-  h2 {
-    line-height: 6vw;
-    font-size: 5vw;
-
-    padding-bottom: 10vw;
-  }
-
-  .dates h3 {
-    font-size: 3vw;
-    line-height: 2vw;
-
-    padding-bottom: 2vw;
-  }
-
   .info  {
     grid-template-columns: 12vw 12vw 8vw 12vw 12vw ;
     grid-template-rows: 10vw 10vw;
