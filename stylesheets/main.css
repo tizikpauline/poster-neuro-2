@@ -48,6 +48,10 @@ nav a {
   padding-left: 2vw;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 .cover {
   margin-top: 11vw;
   margin-bottom: 11vw;
