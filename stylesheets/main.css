@@ -47,9 +47,8 @@ label {
 }
 
 .menu {
-  display: none;
-  text-align: left;
-
+  display: flex;
+  flex-direction: row;
   margin-top: 3vw;
   width: 100%;
 }
@@ -58,13 +57,14 @@ label {
   display: block;
   font-family: "FuturaBookC";
   line-height: 1;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   text-decoration: none;
 
   color: #FFFFFF;
 
   margin-bottom: 1vw;
+  padding-left: 2vw;
 }
 
 #toggle:checked + .menu{
@@ -462,7 +462,7 @@ hr {
 
     margin-bottom: 6vw;
   }
-  
+
   .perfomance h3 {
     font-size: 4rem;
   }
