@@ -12,7 +12,15 @@
   <body>
     <header>
       <img src="images/logo.svg" alt="logo">
-      <img src="images/menu-button.svg" alt="menu-button">
+      <nav>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="menu">
+            <a href="#about">Об опере</a>
+            <a href="#afisha-january">Афиша</a>
+            <a href="#contacts">Контакты</a>
+          </div>
+      </nav>
     </header>
     <main>
       <div class="cover">
@@ -20,11 +28,11 @@
         <h2>Зимний сезон</h2>
         <img src="images/neuro-pic.svg" alt="poster-neuro">
       </div>
-      <div class="about">
+      <div id="about">
         <p>Нейроопера&nbsp;&mdash; это то&nbsp;место, где музыку исполняют не&nbsp;оперные певцы и&nbsp;музыканты, а&nbsp;ваш мозг. К&nbsp;голове посетителя подключается нейрогарнитура, считывающая нервные импульсы головного мозга и&nbsp;преобразующая их&nbsp;в&nbsp;мелодию, создавая уникальное музыкальное произведение.</p>
       </div>
       <div class="afisha">
-        <h2>Январь</h2>
+        <h2 id="afisha-january">Январь</h2>
         <div class="schedule">
           <div class="perfomance">
             <div class="dates">
@@ -123,7 +131,7 @@
       <hr>
     </main>
     <footer>
-      <div class="info">
+      <div id="contacts">
         <div class="grid-item">
           <h3>Адрес</h3>
           <div class="adress">
@@ -135,20 +143,20 @@
           <h3>Администрация</h3>
           <div class="admin">
             <p>Сергей Мезенцев</p>
-            <a href="#">+7(985)164-36-42</a>
+            <p>+7(985)164-36-42</p>
           </div>
         </div>
         <div class="grid-item">
           <h3>Касса оперы</h3>
           <div class="ticket-window">
-            <a href="#">+7(916)593-91-64</a>
+            <p>+7(916)593-91-64</p>
           </div>
         </div>
         <div class="grid-item">
           <h3>Пресс-служба</h3>
           <div class="press">
             <p>Алексей Сергеев</p>
-            <a href="#">+7(925)642-26-15</a>
+            <p>+7(925)642-26-15<p>
           </div>
         </div>
       </div>

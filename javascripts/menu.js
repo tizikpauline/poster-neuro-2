@@ -1,12 +1,8 @@
-$(document).ready(function() {
-    $("button.note-button").on('click', function(event) {
-        var hash = $(this).data("hash");
-        if (hash) {
-            $('html, body').animate({
-                scrollTop: $(document.getElementById(hash)).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            });
-        }
-    });
+$(document).ready(function(){
+  $(".menu").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 });

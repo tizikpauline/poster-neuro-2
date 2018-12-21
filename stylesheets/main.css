@@ -4,6 +4,7 @@
 }
 
 html {
+  height: 100%;
   font-size: 1vw;
 }
 
@@ -19,8 +20,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  height: 13vw;
+  height: 15vw;
 }
 
 header img:first-of-type {
@@ -28,8 +28,47 @@ header img:first-of-type {
   width: 30vw;
 }
 
-header img:last-child {
-  width: 10vw;
+nav {
+  height: 10vw;
+  line-height: 10vw;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  font-size: 7vw;
+  color: white;
+
+  height: 7vw;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  text-align: left;
+
+  margin-top: 3vw;
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  font-family: "FuturaBookC";
+  line-height: 1;
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #FFFFFF;
+
+  margin-bottom: 1vw;
+}
+
+#toggle:checked + .menu{
+  display: block;
 }
 
 .cover {
@@ -64,12 +103,12 @@ header img:last-child {
   width: 55%;
 }
 
-.about {
+#about {
   width: 85%;
   margin-bottom: 11vw;
 }
 
-.about p{
+#about p{
   font-family: "FuturaBookC";
   line-height: 1;
   font-size: 5rem;
@@ -175,7 +214,7 @@ header img:last-child {
   border-style: none;
 }
 
-.info {
+#contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -185,7 +224,7 @@ header img:last-child {
 }
 
 
-.info h3 {
+#contacts h3 {
   margin-bottom: 1.5vw;
   font-family: "FuturaMediumC";
   font-style: normal;
@@ -196,7 +235,7 @@ header img:last-child {
   color: white;
 }
 
-.info a, p {
+#contacts a, p {
   font-family: "FuturaBookC";
   font-size: 4rem;
   line-height: 1.4;
@@ -266,6 +305,13 @@ hr {
     width: 6vw;
   }
 
+  .menu a {
+    font-size: 2.5vw;
+    line-height: 1;
+
+    margin-bottom: 0.8vw;
+  }
+
   .cover h1 {
     font-size: 4rem;
   }
@@ -278,11 +324,11 @@ hr {
     width: 50%;
   }
 
-  .about {
+  #about {
     width: 70%;
   }
 
-  .about p {
+  #about p {
     font-size: 3.2rem;
   }
 
@@ -336,7 +382,7 @@ hr {
     margin-bottom: 7vw;
   }
 
-  .info {
+  #contacts {
     display: grid;
     width: 100%;
     grid-template-columns: 40vw 24vw;
@@ -348,10 +394,12 @@ hr {
     text-align: left;
 
     justify-content: space-between;
+
+    margin-top: 7vw;
+    margin-bottom: 7vw;
   }
 
-
-  .info h3 {
+  #contacts h3 {
     margin-bottom: 1vw;
 
     font-size: 3.5rem;
@@ -360,7 +408,7 @@ hr {
     color: white;
   }
 
-  .info a, p {
+  #contacts a, p {
     font-size: 2.5rem;
     line-height: 1.4;
   }
@@ -369,58 +417,145 @@ hr {
     font-family: "FuturaBookC";
     line-height: 1;
     font-size: 2rem;
-}
+ }
 
-.social-sites img {
-  height: 5vw;
+  .social-sites img {
+    height: 4.5vw;
+  }
 }
 
 @media (min-width: 1024px) {
-  header {
-    margin-bottom: 50px;
+  .cover h1 {
+    font-size: 3rem;
   }
 
-  header img {
-    margin-top: -20px;
+  .cover h2 {
+    font-size: 6rem;
+  }
 
-    width: 260px;
-    height: 110px;
+  #about p {
+    font-size: 2.8rem;
+  }
+
+  .afisha h2 {
+    font-size: 5rem;
+
+    margin-bottom: 5vw;
+  }
+
+  .perfomance h3 {
+    font-size: 4rem;
+  }
+
+  .perfomance h4 {
+    font-size: 3rem;
+
+    margin-bottom: 1vw;
+  }
+
+  .dates {
+    margin-bottom: 1.5vw;
+  }
+
+  .dates-premiere {
+    margin-bottom: 1.5vw;
+  }
+
+  .dates-premiere p {
+    font-size: 2rem;
+  }
+
+  .time {
+    margin-bottom: 1.5vw;
+  }
+
+  .time p {
+    font-size: 2rem;
+  }
+
+  .buy-button {
+    width: 100%;
+    height: 4.5vw;
+
+    font-size: 2rem;
   }
 
   .schedule {
     display: grid;
     width: 100%;
-    grid-template-columns: 20vw 20vw 20vw;
-    grid-template-rows: 60vw 60vw 60vw;
-    grid-column-gap: 5vw;
-    grid-row-gap: 3vw;
+    grid-template-columns: 27vw 27vw 27vw;
+    grid-template-rows: 19vw 19vw 19vw;
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
+    justify-content: space-between;
+
+    margin-bottom: 6vw;
   }
 
-  .info  {
-    grid-template-columns: 15vw 15vw 9vw 15vw 15vw ;
-    grid-template-rows: 10vw 10vw;
-    grid-column-gap: 1vw;
+  #contacts {
+    grid-template-columns: 35vw 32vw;
+    grid-template-rows: 5vw 5vw;
+    grid-column-gap: 10vw;
+    grid-row-gap: 6vw;
+    justify-items: start;
+    align-items: start;
+    text-align: left;
+
+    justify-content: space-between;
+
+    margin-top: 6vw;
+    margin-bottom: 6vw;
   }
 
-  .info h3 {
-    line-height: 132%;
-    font-size: 130%;
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
-  .info a, p {
-    line-height: 122%;
-    font-size: 120%;
+  #contacts h3 {
+    margin-bottom: 1vw;
+    padding-right: 2vw;
+
+    font-size: 2.5rem;
+    line-height: 1;
+
+    color: white;
+  }
+
+  #contacts a, p {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .footer {
+    margin-top: 6vw;
   }
 
   .copyright p {
-    font-size: 120%;
+    font-family: "FuturaBookC";
+    line-height: 1;
+    font-size: 1.7rem;
+ }
+
+  .social-sites img {
+    height: 3.5vw;
+    margin-bottom: 3vw;
   }
 }
 
 @media (min-width: 1440px) {
-  .info  {
-    grid-template-columns: 12vw 12vw 8vw 12vw 12vw ;
-    grid-template-rows: 10vw 10vw;
-    grid-column-gap: 1vw;
+  label {
+    display: none;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
   }
 }
