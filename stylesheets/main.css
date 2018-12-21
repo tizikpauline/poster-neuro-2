@@ -29,35 +29,16 @@ header img {
 }
 
 nav {
-  height: 10vw;
-  line-height: 10vw;
-}
-
-label {
-  display: block;
-  cursor: pointer;
-  font-size: 7vw;
-  color: white;
-
-  height: 7vw;
-}
-
-#toggle {
-  display: none;
-}
-
-.menu {
   display: flex;
   flex-direction: row;
-  margin-top: 3vw;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu a {
-  display: block;
+nav a {
   font-family: "FuturaBookC";
   line-height: 1;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -65,10 +46,6 @@ label {
 
   margin-bottom: 1vw;
   padding-left: 2vw;
-}
-
-#toggle:checked + .menu{
-  display: block;
 }
 
 .cover {
@@ -313,7 +290,7 @@ hr {
     width: 6vw;
   }
 
-  .menu a {
+  nav a {
     font-size: 2.5vw;
     line-height: 1;
 
@@ -505,11 +482,6 @@ hr {
     grid-template-rows: 5vw 5vw;
     grid-column-gap: 10vw;
     grid-row-gap: 6vw;
-    justify-items: start;
-    align-items: start;
-    text-align: left;
-
-    justify-content: space-between;
 
     margin-top: 6vw;
     margin-bottom: 6vw;
@@ -570,15 +542,9 @@ hr {
     display: none;
   }
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .menu a {
+  nav a {
     font-size: 2rem;
-    padding-left: 3vw;
+    padding-left: 3.5vw;
   }
 
   .cover {
