@@ -23,7 +23,7 @@ header {
   height: 15vw;
 }
 
-header img:first-of-type {
+header img {
   height: 10vw;
   width: 30vw;
 }
@@ -58,7 +58,7 @@ label {
   display: block;
   font-family: "FuturaBookC";
   line-height: 1;
-  font-size: 3vw;
+  font-size: 3rem;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -546,6 +546,14 @@ hr {
 }
 
 @media (min-width: 1440px) {
+  header {
+    height: 13vw;
+  }
+
+  header img {
+    height: 6vw;
+  }
+
   label {
     display: none;
   }
@@ -557,5 +565,33 @@ hr {
   .menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+
+  .menu a {
+    font-size: 2rem;
+    padding-left: 3vw;
+  }
+
+  .cover {
+    margin-top: 6vw;
+    margin-bottom: 10vw;
+  }
+
+  .cover img {
+    width: 27%;
+    margin-left: 10vw;
+    margin-bottom: 20vw;
+    margin-top: -10vw;
+    float: right;
+  }
+
+  #about {
+    margin-bottom: 28vw;
+  }
+
+  #about p {
+    width: 70%;
+    font-size: 2.5rem;
   }
 }
