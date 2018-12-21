@@ -214,6 +214,15 @@ label {
   border-style: none;
 }
 
+.buy-button:hover {
+  color: #B8F2F6;
+  background-color: black;
+  border-style: solid;
+  border-color: #B8F2F6;
+
+  transition: 0.8s;
+}
+
 #contacts {
   display: flex;
   flex-direction: column;
@@ -222,7 +231,6 @@ label {
   margin-top: 10vw;
   margin-bottom: 10vw;
 }
-
 
 #contacts h3 {
   margin-bottom: 1.5vw;
@@ -443,6 +451,18 @@ hr {
     margin-bottom: 5vw;
   }
 
+  .schedule {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 27vw 27vw 27vw;
+    grid-template-rows: 19vw 19vw 19vw;
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vw;
+    justify-content: space-between;
+
+    margin-bottom: 6vw;
+  }
+  
   .perfomance h3 {
     font-size: 4rem;
   }
@@ -478,18 +498,6 @@ hr {
     height: 4.5vw;
 
     font-size: 2rem;
-  }
-
-  .schedule {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 27vw 27vw 27vw;
-    grid-template-rows: 19vw 19vw 19vw;
-    grid-column-gap: 6vw;
-    grid-row-gap: 6vw;
-    justify-content: space-between;
-
-    margin-bottom: 6vw;
   }
 
   #contacts {
