@@ -539,14 +539,6 @@ hr {
     height: 6vw;
   }
 
-  label {
-    display: none;
-  }
-
-  #toggle {
-    display: none;
-  }
-
   nav a {
     font-size: 2rem;
     padding-left: 3.5vw;
