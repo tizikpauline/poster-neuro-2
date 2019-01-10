@@ -91,7 +91,7 @@ nav a:hover {
 
 #about p{
   font-family: "FuturaBookC", Helvetica, Arial;
-  line-height: 1;
+  line-height: 6rem;
   font-size: 5rem;
   text-align: left;
 
@@ -190,16 +190,20 @@ nav a:hover {
   font-size: 5rem;
   text-align: center;
 
-  background: #B8F2F6;
-  border-radius: 7px;
-  border-style: none;
-}
 
-.buy-button:hover {
   color: #B8F2F6;
   background-color: black;
   border-style: solid;
+  border-radius: 7px;
   border-color: #B8F2F6;
+}
+
+.buy-button:hover {
+  color: black;
+
+  background: #B8F2F6;
+  border-radius: 7px;
+  border-style: none;
 
   transition: 0.8s;
 }
